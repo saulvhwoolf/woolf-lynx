@@ -105,3 +105,31 @@ a {
     color-scheme: dark;
   }
 }
+
+span {
+  display: inline;
+}
+
+ul {
+  list-style: none;
+  width: 80%;
+  max-width: 800px;
+}
+
+li {
+  padding: 10px 0;
+}
+
+li .extraInfo {
+  display: none;
+}
+
+li:hover .extraInfo {
+  display: inline;
+}
+
+
+li:not(:last-of-type) {
+  border-bottom: thin solid grey;
+}
+
