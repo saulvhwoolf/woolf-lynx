@@ -6,6 +6,7 @@ export type Datum = {
     from : string,
     to: string,
     body: string
+    subject: string
 }
 
 export type Data = Datum[]

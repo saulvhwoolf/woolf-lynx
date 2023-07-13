@@ -7,7 +7,8 @@ type Props = {
 }
 
 async function getData() {
-    const res = await fetch('https://raw.githubusercontent.com/wolflynxcat/wolflynxcat.github.io/main/test.json')
+    const res = await fetch('https://raw.githubusercontent.com/wolflynxcat/wolflynxcat.github.io/main/gmail_data.json', { cache: 'no-store' })
+    // const res = await fetch('https://raw.githubusercontent.com/wolflynxcat/wolflynxcat.github.io/main/test.json', { cache: 'no-store' })
     return res.json()
 }
 
