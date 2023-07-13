@@ -1,4 +1,4 @@
-import {Data, Datum} from "@/app/backing/types";
+import {Data} from "@/app/backing/types";
 import Lynk from "@/app/backing/Lynk";
 
 type Props = {
@@ -27,7 +27,6 @@ export default async function Lynks(props : Props) {
 
     // const d = props.data
     return  <>
-        <p>links</p>
         <ul style={{}}>
             {data.map((datum) => {
                 return <li>
@@ -35,5 +34,6 @@ export default async function Lynks(props : Props) {
                 </li>
             })}
         </ul>
+        <p>fin</p>
     </>
 }
