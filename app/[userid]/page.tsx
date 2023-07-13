@@ -1,6 +1,6 @@
 import styles from '../page.module.css'
 
-import Lynks from "@/app/backing/Lynks";
+import LynkList from "@/app/backing/LynkList";
 
 
 type Props = {
@@ -10,8 +10,8 @@ type Props = {
 export default async function GetUserPage(props : Props) {
     return (
         <main className={styles.lynkPage}>
-            <h1>{props.params.userid}'s lynks</h1>
-            <Lynks userFilter={props.params.userid}/>
+            <h1>{props.params.userid}'s lynx</h1>
+            <LynkList userFilter={props.params.userid}/>
         </main>
     )
 }

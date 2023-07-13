@@ -12,7 +12,7 @@ async function getData() {
     return res.json()
 }
 
-export default async function Lynks(props : Props) {
+export default async function LynkList(props : Props) {
     let data = await getData() as Data
     if (props.userFilter != null) {
         data = data.filter((datum) => {
@@ -20,13 +20,10 @@ export default async function Lynks(props : Props) {
         })
     }
 
-
     if (data.length == 0) {
         return <p>No lynks for this user!</p>
     }
-    // const datum = data[0]
 
-    // const d = props.data
     return  <>
         <ul style={{}}>
             {data.map((datum) => {

@@ -1,4 +1,5 @@
 import {Datum} from "@/app/backing/types";
+import LynkBody from "@/app/backing/LynkBody";
 
 
 type Props = {
@@ -10,6 +11,6 @@ export default function Lynk(props : Props) {
     return  <>
 
         <p>{">"} {d.subject}<span className={'extraInfo'}>::: <i><a href={d.from}>{d.from}</a></i></span></p>
-        <p><a href={d.body}>{d.body}</a></p>
+        <LynkBody body={d.body}/>
     </>
 }
